@@ -31,6 +31,12 @@ ol[role="list"] {
   list-style: none;
 }
 
+/* If you forget the sematic role (can be turned off) */
+ul,
+ol {
+  list-style: none;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -41,7 +47,7 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
+/* A elements that don't have a class get default styles (Turn off if nto wanted) */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
